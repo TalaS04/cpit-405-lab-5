@@ -1,0 +1,43 @@
+header{
+    padding: 50px;
+    text-align: center;
+    background-color: seagreen;
+    color: white;
+    p{
+        color: white;
+    }
+    nav{
+    color:white;
+    }
+}
+
+h1{
+    font-size: 50px;
+}
+
+p{
+    color:rgb(91, 87, 87)
+}
+
+
+section{
+    margin: 50px;
+    color:rgb(91, 87, 87)
+    div {
+        border-style: outset;
+    }
+    display: block;
+    h2{
+        background-color: seagreen; 
+        color: white;
+    }
+}
+
+footer{
+    padding: 10px;
+    text-align: center;
+    background-color: seagreen;  
+    p{
+    color:white;
+    } 
+}
