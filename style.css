@@ -1,14 +1,35 @@
 header{
-    padding: 50px;
+    padding: 40px;
     text-align: center;
-    background-color: seagreen;
-    color: white;
+    background-image: url("back.jpg");
+    color: rgb(83, 104, 69);
+
     p{
-        color: white;
+        color: rgb(83, 104, 69);
+        font-weight: bold;
     }
+
     nav{
-    color:white;
+        margin-top: 25px;
+
+        a{
+            color:rgb(83, 104, 69);
+            text-decoration: none;
+            margin: 0 12px;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        a: hover{
+            text-decoration: underline;
+            color:rgb(83, 104, 69);
+        }
+    
     }
+}
+
+body{
+    background-color: rgb(255, 251, 192);
 }
 
 h1{
@@ -16,28 +37,88 @@ h1{
 }
 
 p{
-    color:rgb(91, 87, 87)
+    color:rgb(91, 87, 87);
 }
 
 
 section{
     margin: 50px;
-    color:rgb(91, 87, 87)
-    div {
-        border-style: outset;
-    }
-    display: block;
+    padding: 25px;
+    width: 85%;
+    border: 1px solid rgb(83, 104, 69);
+    border-radius: 10px;
+    
     h2{
-        background-color: seagreen; 
-        color: white;
+        background-color: rgb(177, 221, 147); 
+        color: rgb(83, 104, 69);
+        padding: 12px 18px; 
+        border-radius: 6px;
+    }
+
+    h3{
+        color: rgb(83, 104, 69);
+    }
+}
+
+#contact a {
+    color: rgb(83, 104, 69);
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: rgb(83, 104, 69);
+    text-decoration: underline;
+}
+
+#contact a:visited {
+    color: rgb(83, 104, 69);
+}
+
+.skills-list {
+    padding: 0;
+
+    li{
+        display: inline-block;
+        background-color: rgb(233, 244, 218); 
+        color: rgb(83, 104, 69);
+        padding: 10px 18px; 
+        margin: 5px; 
+        border: 1px solid rgb(177, 221, 147);
+        border-radius: 20px;
+    }
+}
+
+.project-card { 
+    padding: 20px; 
+    margin: 10px; 
+    background-color: rgb(233, 244, 218);
+    border: 1px solid rgb(177, 221, 147);
+    border-left: 5px solid rgb(83, 104, 69); 
+    border-radius: 6px; 
+
+    a { 
+        color: rgb(83, 104, 69);
+        font-weight: bold; 
+        text-decoration: none; 
+    } 
+
+    a:hover {
+        color: rgb(83, 104, 69); 
+        text-decoration: underline;        
     }
 }
 
 footer{
     padding: 10px;
     text-align: center;
-    background-color: seagreen;  
+    background-image: url("back.jpg"); 
+
     p{
-    color:white;
+    color:rgb(83, 104, 69);
     } 
+
+    a:hover { 
+        color: rgb(83, 104, 69); 
+        text-decoration: underline; 
+    }    
 }
