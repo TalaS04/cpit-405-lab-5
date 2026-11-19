@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My CV</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -20,6 +21,7 @@
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
+        <button id="theme-toggle">Dark Mode</button>
     </header>
 
     <main class="cv-container">
@@ -27,9 +29,17 @@
         <section id="about" class="cv-section">
             <h2>About Me</h2>
             <p>
-                I am an undergraduate Information Technology student who is ambitious and has an interest in Software Development, Web Technologies, and User Interface Development.
-                My goal is to continue developing my technical and problem-solving skills while building practical solutions using modern technologies. 
+                I am an undergraduate Information Technology student at King Abdulazziz University. 
             </p>
+
+            <div id="more-about" class="hidden">
+                <p>
+                I'm an ambitious person and have an interest in Software Development, Web Technologies, and User Interface Development.
+                My goal is to continue developing my technical and problem-solving skills while building practical solutions using modern technologies.
+                </p>
+            </div>
+
+            <button id="about-toggle">Show More</button>
         </section>
 
         <section id="education" class="cv-section">
@@ -59,21 +69,16 @@
 
         <section id="projects" class="cv-section">
             <h2>Projects</h2>
+            
+            <div class="project-filters">
+                <button class="filter-btn" data-category="All">All</button>
+                <button class="filter-btn" data-category="Web">Web</button>
+                <button class="filter-btn" data-category="Programming">Programming</button>
+            </div>            
 
-            <article class="project-card">
-                <h3>AI Career Advisor / بوصلة</h3>
-                <p>AI-powered career guidance platform designed to help users explore suitable university majors and career paths.</p>
-            </article>
-
-            <article class="project-card">
-                <h3>CodeWay</h3>
-                <p>High-Fidelity prototype for Programming courses website.</p>
-            </article>
-
-            <article class="project-card">
-                <h3>Samia Salon Reservation system</h3>
-                <p>A reservation system developed using Java for a Hair salon.</p>
-            </article>
+            <div id="projects-container">
+                <!-- JavaScript will generate project cards here -->
+            </div>
         </section>
 
         <section id="contact" class="cv-section">
@@ -92,7 +97,7 @@
         </section>
 
     </main>
-
+    <button id="print-button">Print / Save as PDF</button>
     <footer>
         <p>© 2026 Tala Saygal</p>
     </footer>

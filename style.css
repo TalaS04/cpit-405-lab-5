@@ -122,3 +122,211 @@ footer{
         text-decoration: underline; 
     }    
 }
+
+body.dark-mode{
+    background-color: #26352a;
+    color: #f2f2e9;
+}
+
+body.dark-mode .cv-section {
+    background-color: #344436;
+    border-color: #8aa17b;
+}
+
+body.dark-mode .cv-section h3, 
+body.dark-mode .cv-section p {
+    color: #f2f2e9;
+}
+
+body.dark-mode .skills-list li,
+body.dark-mode .project-card {
+    background-color: #435743;
+    color: white;
+    border-color: #8aa17b;
+}
+
+
+#theme-toggle {
+    background-color: rgb(83, 104, 69);
+    color: white;
+    border: 2px solid rgb(83, 104, 69);
+    border-radius: 25px;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin: 20px; 
+}
+
+#theme-toggle:hover {
+    background-color: rgb(177, 221, 147);
+    color: rgb(47, 70, 48);
+    transform: translateY(-2px);
+}
+
+body.dark-mode #theme-toggle {
+    background-color: rgb(233, 244, 218);
+    color: rgb(47, 70, 48);
+    border-color: rgb(233, 244, 218);
+}
+
+body.dark-mode #theme-toggle:hover {
+    background-color: rgb(177, 221, 147);
+}
+
+.hidden {
+    display: none;
+}
+
+#about-toggle {
+    background-color: rgb(83, 104, 69);
+    color: white;
+    border: 2px solid rgb(83, 104, 69);
+    border-radius: 25px;
+    padding: 10px 22px;
+    margin: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#about-toggle:hover {
+    background-color: rgb(177, 221, 147);
+    color: rgb(47, 70, 48);
+}
+
+#projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: rgb(233, 244, 218);
+    border: 2px solid rgb(177, 221, 147);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 250px;
+}
+
+.project-card h3 {
+    color: rgb(83, 104, 69);
+}
+
+.project-card p {
+    color: rgb(91, 87, 87);
+}
+
+body.dark-mode .project-card {
+    background-color: #435743;
+    border-color: #8aa17b;
+}
+
+.project-filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background-color: rgb(233, 244, 218);
+    color: rgb(83, 104, 69);
+    border: 2px solid rgb(177, 221, 147);
+    border-radius: 25px;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: rgb(83, 104, 69);
+    color: white;
+}
+
+body.dark-mode .filter-btn {
+    background-color: #435743;
+    color: white;
+    border-color: #8aa17b;
+}
+
+body.dark-mode .filter-btn:hover {
+    background-color: #8aa17b;
+    color: #26352a;
+}
+
+#print-button {
+    background-color: rgb(83, 104, 69);
+    color: white;
+    border: 2px solid rgb(83, 104, 69);
+    border-radius: 25px;
+    padding: 10px 22px;
+    margin: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#print-button:hover {
+    background-color: rgb(177, 221, 147);
+    color: rgb(47, 70, 48);
+}
+
+@media print {
+
+    nav,
+    #theme-toggle,
+    #about-toggle,
+    .project-filters,
+    #print-button {
+        display: none !important;
+    }
+
+    body {
+        background: white !important;
+        color: black !important;
+        margin: 0;
+        padding: 0;
+    }
+
+    .cv-container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .cv-section {
+        box-shadow: none !important;
+        margin: 10px 0;
+        padding: 15px;
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .hidden {
+        display: block !important;
+    }
+
+    .project-card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    header,
+    footer {
+        break-inside: avoid;
+    }
+
+    @page {
+        size: A4;
+        margin: 12mm;
+    }
+}
